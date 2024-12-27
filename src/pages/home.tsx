@@ -1,7 +1,16 @@
+import CartesianPlane from "../components/CartesianPlane"
+import useWindowDimensions from "../functions/useWindowDimensions";
+
 function Home() {
+    const points = [
+        { x: 50, y: 50 },
+        { x: -50, y: -50 },
+        { x: 100, y: -100 },
+    ];
+
     return (
         <main>
-            <h1>Hello world</h1>
+            <CartesianPlane points={points} />
         </main>
     )
 }
